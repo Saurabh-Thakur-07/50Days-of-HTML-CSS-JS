@@ -3,10 +3,58 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Ubuntu Mono';
-    display: flex;
     margin: 0;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
+    font-family: 'Ubuntu Mono';
+    overflow-x: hidden;
+    background-color: #333;
+    color: #222;
+}
+.container{
+    background-color: #fafafa;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+}
+.container.show-nav{
+    transform: rotate(-20deg);
+}
+.content img{
+    max-width: 100%;
+}
+.circle-container{
+    position: fixed;
+    top: -110px;
+    left: -110px;
+}
+.circle{
+    background-color: #ff7979;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s linear;
+}
+.circle button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: transparent;
+    height: 100px;
+    color: #fff;
+    border: 0;
+    font-size: 26px;
+    cursor: pointer;
+}
+.cirlce button:focus{
+    outline: none;
+}
+.circle button#open{
+    left: 60%;
+}
+.circle button#close{
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
 }
