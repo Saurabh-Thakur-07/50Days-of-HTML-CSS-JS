@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&family=Ubuntu+Mono:wght@400;700&display=swap');
+body{
+    font-family: 'Ubuntu Mono';
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    overflow: hidden;
+}
